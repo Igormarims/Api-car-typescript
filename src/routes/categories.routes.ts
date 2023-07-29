@@ -13,5 +13,10 @@ const categoriesRepository = new CategoriesRepository();
         return response.status(201).send();
    })
 
+categoriesRoutes.get("/",(request: Request, response: Response)=>{
+    const list = categoriesRepository.list();
+    return response.status(200).json(list);
+})
+
 
  export { categoriesRoutes }
