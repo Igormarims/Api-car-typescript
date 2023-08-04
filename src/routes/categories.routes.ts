@@ -21,4 +21,4 @@ categoriesRoutes.get("/",(request: Request, response: Response)=>{
 })
 
 
- export { categoriesRoutes }
+ export { categoriesRoutes } 
